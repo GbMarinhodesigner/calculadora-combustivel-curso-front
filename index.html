@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="img">
+        </div>
+
+        <div class="conteudo">
+            <h1>Calculadora de Combustível</h1>
+            <p>Preencha as informações abaixo para calcular</p>
+            <form>
+                <P>Informe o preço do Etanol</P>
+                <input type="text" placeholder="" id="etanol">
+
+                <P>Informe o preço da Gasolina</P>
+                <input type="text" placeholder="" id="gasolina">
+
+            </form>
+            <button type="button" id='calcular'>Calcular </button>
+
+            <h2 id="info-resultado" type="text"> </h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('#etanol').mask('000.000.000.000.000,00',{reverse: true});
+            $('#gasolina').mask('000.000.000.000.000,00',{reverse: true});
+        });
+
+
+
+            
+
+       
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
